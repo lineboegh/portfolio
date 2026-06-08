@@ -1,0 +1,528 @@
+/* GENERAL */
+
+* {
+  font-family: inter-18pt, sans-serif;
+  color: var(--soft-black);
+}
+
+body {
+  background-color: var(--white);
+}
+
+h1 {
+  font-family: articulat-heavy-cf, sans-serif;
+
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: articulat-cf, sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+h3 {
+  font-family: articulat-cf, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+main,
+header,
+footer {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 0.9rem;
+}
+
+p {
+  max-width: 65ch;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* KNAPPER */
+
+.button-1 {
+  text-decoration: none;
+  background-color: var(--olive);
+  color: var(--soft-black);
+  border: none;
+  border-radius: 2px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+
+  cursor: pointer;
+}
+
+.button-1:hover {
+  background-color: var(--pale-olive);
+  color: var(--charcoal);
+}
+
+.button-2 {
+  text-decoration: none;
+  background-color: var(--pale-cobalt);
+  color: var(--cream);
+  border: none;
+  border-radius: 2px;
+  padding: 0.6rem 1.4rem;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+.button-2:hover {
+  background-color: var(--cobalt);
+}
+
+.button-3 {
+  text-decoration: none;
+
+  background-color: var(--cream);
+  color: var(--charcoal);
+  border-radius: 8px;
+  border: 2px solid var(--beige);
+  font-weight: 400;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.25);
+  padding: 0.5rem 1.2rem;
+}
+
+.button-3:hover {
+  background-color: var(--beige);
+}
+
+.button-link {
+  text-decoration: none;
+  color: var(--olive);
+  font-size: 0.9rem;
+}
+.button-link:hover {
+  text-decoration: underline var(--olive);
+  color: black;
+}
+
+.small-button {
+  text-decoration: none;
+  font-size: 0.9rem;
+
+  background-color: var(--pale-olive);
+  color: var(--charcoal);
+  border-radius: 8px;
+  font-weight: 400;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.25);
+  padding: 0.4rem 1rem;
+}
+
+.small-button:hover {
+  background-color: var(--olive);
+}
+
+.inline-link {
+  color: var(--pale-cobalt);
+}
+.inline-link:hover {
+  color: var(--cobalt);
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  background-color: var(--white);
+}
+
+/* BRAND WORD */
+.brand-word {
+  display: block;
+  text-decoration: none;
+  color: var(--charcoal);
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-align: left;
+  line-height: 1.4rem;
+}
+
+.brand-word:hover {
+  text-decoration: none;
+}
+
+#navn {
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+/* MOBILE */
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: block;
+  width: 30px;
+  cursor: pointer;
+  padding: 15px;
+  margin-left: auto;
+}
+
+.menu-icon span {
+  display: block;
+  height: 3px;
+  background: var(--soft-black);
+  margin: 6px 0;
+  transition: 0.3s;
+}
+
+.menu {
+  display: none;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: var(--charcoal);
+  font-weight: 500;
+  text-align: right;
+}
+
+.menu a:hover {
+  transition: 0.1s;
+  text-decoration: underline var(--olive);
+}
+
+/* når checkbox er checked */
+#menu-toggle:checked + .menu-icon + .menu {
+  display: block;
+  position: absolute;
+  top: 70px;
+  right: 2rem;
+}
+
+/* lille animation på burgeren */
+#menu-toggle:checked + .menu-icon span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+#menu-toggle:checked + .menu-icon span:nth-child(2) {
+  opacity: 0;
+}
+
+#menu-toggle:checked + .menu-icon span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* desktop */
+@media (min-width: 768px) {
+  .header {
+    padding: 1rem 1rem;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .menu ul {
+    display: flex;
+    gap: 20px;
+    justify-content: right;
+  }
+
+  .menu a {
+    border: none;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+}
+/* MENU SLUT */
+
+/* INDEX START */
+#hero {
+  background-color: var(--cream);
+  padding: 2rem 3rem;
+  border-radius: 3px;
+  background-image: url(../img/index-hero.webp);
+  background-size: cover;
+  background-position: 75% center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  min-height: 600px;
+
+  margin-bottom: 3rem;
+}
+
+#hero-h1 {
+  font-size: 2rem;
+  max-width: 18ch;
+  color: var(--soft-black);
+  margin-bottom: 3rem;
+}
+
+#hero-subheader {
+  margin: 3rem 0;
+  font-family: articulat-cf, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--olive);
+}
+
+.index-knapper {
+  margin: 3rem auto;
+}
+
+.index-section-2 img {
+  margin-top: 2rem;
+}
+
+@media (min-width: 750px) {
+  #hero-h1 {
+    max-width: 1000px;
+    margin-bottom: 4rem;
+    font-size: 3rem;
+  }
+
+  .index-section-2 {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 3rem;
+    border: 3px solid var(--cream);
+    border-radius: 4px;
+  }
+  .index-section-2 img {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0;
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .index-section-2 .text {
+    grid-column: 2;
+    align-content: center;
+  }
+}
+
+/* INDEX SLUT */
+
+/* PROJEKTER START */
+
+.project-summary {
+  margin: 2rem auto;
+  padding-bottom: 3rem;
+  background-color: var(--white);
+
+  border: 1px solid var(--beige);
+  padding: 1rem 1rem 2rem 1rem;
+  border-radius: 5px;
+}
+
+.gallery-container {
+  background-color: var(--cream);
+  padding: 1rem 1rem 1rem 1rem;
+  margin-top: 3rem;
+  border-radius: 3px;
+}
+
+.gallery h3 {
+  padding-top: 0.5rem;
+  margin: 0;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+.details {
+  font-size: 0.85rem;
+  color: var(--olive);
+  font-weight: 600;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.project-link {
+  text-decoration: none;
+}
+
+.project-description {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-auto-rows: minmax(100px, 1fr);
+    column-gap: 2rem;
+    row-gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .gallery img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin: 0.5rem auto;
+  }
+
+  .project-summary {
+    margin: 0;
+    padding-bottom: 3rem;
+  }
+}
+/* PROJEKTER SLUT */
+
+/* OM MIG START
+
+/* INTRO */
+
+#profil {
+  /* background-color: var(--cream); */
+  /* padding: 2rem 3rem; */
+  border-radius: 3px;
+  background-image: url("../img/background.webp");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+
+#profil h1 {
+  grid-column: span 2;
+}
+
+#profil img {
+  max-height: 350px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+@media (min-width: 750px) {
+  #profil {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    overflow: hidden;
+    padding-right: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  #profil img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+  }
+}
+
+/* TIMELINE */
+.timeline {
+  margin-top: 2rem;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  column-gap: 1rem;
+}
+
+.timeline-left {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.timeline-line {
+  width: 2.5px;
+  height: 100%;
+  background-color: var(--olive);
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 0.2rem;
+
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+
+  background-color: var(--pale-cobalt);
+}
+
+.timeline-content {
+  padding-bottom: 3rem;
+}
+
+.timeline-content h3 {
+  margin: 0 0 1.5rem;
+  font-size: 1rem;
+  line-height: 1.05;
+}
+
+.timeline-content p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.15;
+}
+
+#grid-uddannelse,
+#grid-erhverv {
+  background-color: var(--cream);
+  padding: 1rem 1rem 1rem 0.7rem;
+  margin: 1rem;
+}
+
+.timeline-section h2 {
+  font-size: 1.8rem;
+  margin: 0 0.5rem;
+}
+
+.timeline-section p {
+  font-size: 0.9rem;
+}
+
+@media (min-width: 750px) {
+  .timeline-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin: 1rem 0;
+  }
+  #grid-uddannelse,
+  #grid-erhverv {
+    margin: 0;
+  }
+}
+
+footer {
+  margin: 4rem auto;
+  padding: 0;
+}
+
+footer p {
+  text-align: center;
+  margin: 0 auto;
+}
+
+footer hr {
+  border: none;
+  height: 1px;
+  background: var(--pale-olive);
+  margin-bottom: 3rem;
+}

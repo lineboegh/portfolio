@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/kyr6hyf.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <title>Kontakt</title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="brand-word" href="index.html"> <span id="navn">Line Bøgh </span> <br />Web design</a>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Forside</a></li>
+          <li><a href="projekter.html">Projekter</a></li>
+          <li><a href="om-mig.html">Om mig</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="kontakt-site">
+      <section>
+        <h1>Kontakt</h1>
+        <p>Har du spørgsmål, et projekt i tankerne eller lyst til at samarbejde? Du er altid velkommen til at sende mig en besked via formularen.</p>
+
+        <section id="form-section">
+          <section id="kontakt">
+            <form id="webform">
+              <h2 class="form-group">Kontaktformular</h2>
+              <div class="form-group">
+                <label for="name">Dit navn</label>
+                <input type="text" id="name" name="name" required />
+                <p class="error" id="name-error">Skriv venligst dit navn</p>
+              </div>
+              <div class="form-group">
+                <label for="email">Email adresse</label>
+                <input type="email" id="email" name="email" required />
+                <p class="error" id="email-error">Indtast en gyldig email</p>
+              </div>
+              <div class="form-group">
+                <label for="besked">Besked</label>
+                <textarea name="besked" id="besked" cols="40" rows="8" required minlength="10"></textarea>
+              </div>
+              <p class="error" id="besked-error">Skriv mindst 10 tegn</p>
+
+              <button class="form-knap button-3" type="submit">Send besked</button>
+            </form>
+          </section>
+
+          <section id="form-summary">
+            <h3>Din henvendelse</h3>
+            <article>
+              <p><span id="outputName">Her kan du se en opsummering af din henvendelse, når du har udfyldt kontaktformularen</span></p>
+              <p><span id="outputEmail"></span></p>
+              <p><span id="outputBesked"></span></p>
+            </article>
+          </section>
+        </section>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

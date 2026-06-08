@@ -1,0 +1,68 @@
+.kontakt-site label:has(input) {
+  display: flex;
+  align-items: center;
+  gap: 1ch;
+}
+
+.kontakt-site input,
+.kontakt-site textarea {
+  border-radius: 3px;
+  background-color: var(--white);
+  border: 1.5px solid var(--charcoal);
+  padding: 0.5rem;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.kontakt-site input:focus,
+.kontakt-site textarea:focus {
+  outline: 1.5px solid var(--cobalt);
+  outline-offset: 2px;
+}
+
+.error {
+  display: none;
+}
+
+.error {
+  display: none;
+  color: darkred;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+.form-group:has(:user-invalid) .error {
+  display: block;
+}
+
+.form-group:has(input:user-invalid) input,
+.form-group:has(textarea:user-invalid) textarea,
+.form-group:has(input[type="radio"]:user-invalid) input {
+  outline: 1px solid red;
+  border-color: darkred;
+}
+
+.kontakt-site label:has(input) {
+  display: flex;
+  align-items: center;
+  gap: 1ch;
+}
+
+.kontakt-site label {
+  display: block;
+  margin-top: 2rem;
+}
+
+.button-3 {
+  margin-top: 2rem;
+  background-color: var(--pale-olive);
+}
+
+h3 {
+  margin-top: 3rem;
+}
+
+#form-section {
+  background-color: var(--cream);
+  padding: 1rem;
+}
