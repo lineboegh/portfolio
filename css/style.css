@@ -232,7 +232,7 @@ img {
 }
 
 /* desktop */
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .header {
     padding: 1rem 1rem;
   }
@@ -333,7 +333,6 @@ img {
   margin: 2rem auto;
   padding-bottom: 3rem;
   background-color: var(--white);
-
   border: 1px solid var(--beige);
   padding: 1rem 1rem 2rem 1rem;
   border-radius: 5px;
@@ -373,7 +372,7 @@ img {
   margin-bottom: 2rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
   .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -402,8 +401,6 @@ img {
 /* INTRO */
 
 #profil {
-  /* background-color: var(--cream); */
-  /* padding: 2rem 3rem; */
   border-radius: 3px;
   background-image: url("../img/background.webp");
   background-size: cover;
@@ -548,7 +545,7 @@ footer p {
 footer hr {
   border: none;
   height: 1px;
-  background: var(--pale-olive);
+  background: var(--beige);
   margin-bottom: 3rem;
 }
 
@@ -563,8 +560,7 @@ footer a {
   color: var(--olive);
 }
 
-/* LAYOUT DETAILS */
-
+/* tilføj pil til knapper */
 .arrow::after {
   content: " ↗";
   font-size: 1rem;

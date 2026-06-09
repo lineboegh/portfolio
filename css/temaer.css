@@ -1,8 +1,8 @@
-/* TEMA 2 */
-
 .tema-label {
   margin: 0;
   padding: 0;
+  margin-top: 2rem;
+  color: var(--olive);
 }
 .tema-hero h1 {
   padding-top: 0.1rem;
@@ -17,37 +17,12 @@
   margin-right: 1rem;
 }
 
-/* Highlights */
-
-.highlight {
-  background-color: var(--white);
-  padding: 1rem;
-  margin: 0.5rem;
-  border-radius: 2px;
-}
-
-.highlight dt {
-  text-decoration: none;
-  font-family: articulat-cf, sans-serif;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--olive);
-}
-
-.highlight dd {
-  text-decoration: none;
-  padding: 1rem 0 0 0;
-  margin: 0;
-}
-
 .refleksion-container {
-  background-color: var(--white);
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   margin: 2rem 0;
-  border-radius: 3px;
 }
 
-/* ---------- Accordion section ---------- */
+/* Accordion START */
 
 .accordion-section {
   margin-top: 4rem;
@@ -75,8 +50,6 @@
   font-size: 0.9rem;
 }
 
-/* ---------- Accordion item ---------- */
-
 .accordion-item {
   border: 2px solid var(--cream);
   border-radius: 5px;
@@ -88,8 +61,6 @@
 .accordion-item:hover {
   border-color: var(--olive);
 }
-
-/* ---------- Summary / closed state ---------- */
 
 .accordion-item summary {
   position: relative;
@@ -104,7 +75,6 @@
   list-style: none;
 }
 
-/* fjern standard markør */
 .accordion-item summary::-webkit-details-marker {
   display: none;
 }
@@ -130,6 +100,14 @@
   transform: rotate(-135deg);
 }
 
+/* Accordion til desktop */
+@media (min-width: 750px) {
+  .accordion-section {
+    padding: 3rem;
+  }
+}
+
+/* HERO START */
 @media (min-width: 750px) {
   .tema-hero {
     display: grid;
@@ -147,38 +125,19 @@
   }
 }
 
-@media (min-width: 750px) {
-  .grid_1-1 {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-  }
+.tema-hero h1 {
+  hyphens: auto;
+  overflow-wrap: break-word;
 }
 
-/* Accordion til desktop */
-@media (min-width: 750px) {
-  .accordion-section {
-    padding: 3rem;
-  }
-
-  accordion-content {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-  }
-}
-
-/* NAV */
+/* TEMA NAV */
 
 .tema-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 0rem;
+  padding: 1rem 1rem;
   background-color: var(--white);
-}
-
-.tema-hero h1 {
-  hyphens: auto;
-  overflow-wrap: break-word;
 }
 
 /* BUTTON EDIT */
@@ -188,4 +147,9 @@
   height: auto;
   display: block;
   margin-top: 2rem;
+}
+
+/* T4 ekstra styling */
+#t4-hero-img {
+  object-fit: contain;
 }
