@@ -16,7 +16,7 @@
   </head>
   <body>
     <header class="header">
-      <a class="brand-word" href="index.html"> <span id="navn">Line Bøgh </span> <br />Web design</a>
+      <a class="brand-word" href="index.html"> <span id="navn">Line Bøgh </span> <br />Portfolio</a>
       <input type="checkbox" id="menu-toggle" />
       <label for="menu-toggle" class="menu-icon">
         <span></span>
@@ -35,10 +35,14 @@
     <main class="kontakt-site">
       <section>
         <h1>Kontakt</h1>
-        <p>Har du spørgsmål, et projekt i tankerne eller lyst til at samarbejde? Du er altid velkommen til at sende mig en besked via formularen.</p>
-
-        <section id="form-section">
-          <section id="kontakt">
+        <p>Du er velkommen til at kontakte mig, hvis du har spørgsmål til mit portfolio, mine projekter eller min faglige profil.</p>
+        <p><strong>Bemærk</strong> at kontaktformularen nedenfor ikke sender din besked til mig. Dens formål er at illustrere, hvordan jeg arbejder med formularfelter, validering og JavaScript.</p>
+        <p>
+          For at kontakte mig, bedes du henvende dig via mail til <a class="inline-link" href="mailto:Lsboegh@hotmail.com">Lsboegh@hotmail.com</a> eller gennem
+          <a class="inline-link" href="https://www.linkedin.com/in/lsboegh" target="_blank">LinkedIn</a>.
+        </p>
+        <div id="form-section">
+          <div id="kontakt">
             <form id="webform">
               <h2 class="form-group">Kontaktformular</h2>
               <div class="form-group">
@@ -47,33 +51,34 @@
                 <p class="error" id="name-error">Skriv venligst dit navn</p>
               </div>
               <div class="form-group">
-                <label for="email">Email adresse</label>
+                <label for="email">E-mailadresse</label>
                 <input type="email" id="email" name="email" required />
-                <p class="error" id="email-error">Indtast en gyldig email</p>
+                <p class="error" id="email-error">Indtast en gyldig e-mailadresse</p>
               </div>
               <div class="form-group">
                 <label for="besked">Besked</label>
                 <textarea name="besked" id="besked" cols="40" rows="8" required minlength="10"></textarea>
+                <p class="error" id="besked-error">Skriv mindst 10 tegn</p>
               </div>
-              <p class="error" id="besked-error">Skriv mindst 10 tegn</p>
 
-              <button class="form-knap button-3" type="submit">Send besked</button>
+              <button class="form-knap button-2" type="submit">Send besked</button>
             </form>
-          </section>
+          </div>
 
-          <section id="form-summary">
+          <div id="form-summary">
             <h3>Din henvendelse</h3>
             <article>
               <p><span id="outputName">Her kan du se en opsummering af din henvendelse, når du har udfyldt kontaktformularen</span></p>
               <p><span id="outputEmail"></span></p>
               <p><span id="outputBesked"></span></p>
             </article>
-          </section>
-        </section>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
       <hr />
+      <div id="flex-footer"><a class="button-link" href="kontakt.html">Kontaktformular</a> <a class="button-link" href="mailto:Lsboegh@hotmail.com">Mail</a> <a class="button-link" href="https://www.linkedin.com/in/lsboegh">LinkedIn</a></div>
       <p>&copy; 2026, Line Bøgh</p>
     </footer>
     <script src="js/main.js"></script>
