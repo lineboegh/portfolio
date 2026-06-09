@@ -216,6 +216,8 @@ img {
   position: absolute;
   top: 70px;
   right: 2rem;
+  background-color: var(--white);
+  border-radius: var(--corner);
 }
 
 /* lille animation på burgeren */
