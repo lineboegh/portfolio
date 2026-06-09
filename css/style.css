@@ -562,13 +562,13 @@ footer a {
 
 /* tilføj pil til knapper */
 .arrow::after {
-  content: "\2197\FE0E";
+  content: " \2197\FE0E";
   font-size: 1rem;
   color: var(--olive);
 }
 
 .blue-arrow::after {
-  content: "\2197\FE0E";
+  content: " \2197\FE0E";
   font-size: 1rem;
   color: var(--pale-cobalt);
 }
