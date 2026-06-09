@@ -135,6 +135,7 @@
     display: grid;
     grid-template-columns: 3fr 2fr;
     overflow: hidden;
+    gap: 2rem;
   }
 
   .tema-hero img {
@@ -142,6 +143,7 @@
     width: 100%;
     margin: 0 auto;
     object-fit: cover;
+    border-radius: var(--corner);
   }
 }
 
@@ -149,12 +151,6 @@
   .grid_1-1 {
     display: grid;
     grid-template-columns: 3fr 2fr;
-  }
-
-  .highlights {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 2rem;
   }
 }
 
@@ -186,3 +182,10 @@
 }
 
 /* BUTTON EDIT */
+
+.process-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 2rem;
+}

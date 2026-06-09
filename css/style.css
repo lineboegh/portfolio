@@ -353,6 +353,10 @@ img {
   padding-bottom: 1rem;
 }
 
+#gallery-meta-text {
+  margin-bottom: 2.5rem;
+}
+
 .details {
   font-size: 0.85rem;
   color: var(--olive);
@@ -567,10 +571,18 @@ footer a {
   color: var(--olive);
 }
 
-.max-width-700 {
-  max-width: 700px;
+.blue-arrow::after {
+  content: " ↗";
+  font-size: 1rem;
+  color: var(--pale-cobalt);
 }
 
-.max-width-500 {
-  max-width: 500px;
+@media (min-width: 850px) {
+  .max-width-700 {
+    max-width: 700px;
+  }
+
+  .max-width-500 {
+    max-width: 500px;
+  }
 }
