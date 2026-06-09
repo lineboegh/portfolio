@@ -568,7 +568,7 @@ footer a {
 }
 
 .blue-arrow::after {
-  content: " ↗";
+  content: "\2197\FE0E";
   font-size: 1rem;
   color: var(--pale-cobalt);
 }
